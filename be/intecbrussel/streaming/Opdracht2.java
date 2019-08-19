@@ -32,7 +32,7 @@ public class Opdracht2 {
                 "that", "much"};
         System.out.println(Stream
                 .of(strArray)
-                .reduce("", (acc, el) -> acc=="" ? el : acc+";"+el));
+                .reduce("", (acc, el) -> acc.equals("") ? el : acc+";"+el));
 
     }
 }
